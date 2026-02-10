@@ -1,26 +1,61 @@
 [build-system]
-requires = ["setuptools>=64"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "wenex"
-version = "0.1.0"
-description = "A simple greeting package"
+dynamic = ["version"]
+description = 'Wenex SDK'
 readme = "README.md"
-requires-python = ">=3.12"
-license = {file = "LICENSE"}
-
+requires-python = ">=3.8"
+license = "Apache-2.0"
+keywords = ["sdk", "wenex", "wenex-sdk"]
 authors = [
-    {name = "Your Name", email = "you@example.com"},
+  { name = "Vahid V.", email = "vhid.vz@gmail.com" },
 ]
-
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3 :: Only",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Operating System :: OS Independent",
 ]
+dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/yourusername/greeting"
+Documentation = "https://github.com/wenex-org/python-sdk#readme"
+Issues = "https://github.com/wenex-org/python-sdk/issues"
+Source = "https://github.com/wenex-org/python-sdk"
+
+[tool.hatch.version]
+path = "src/wenex/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/wenex tests}"
+
+[tool.coverage.run]
+source_pkgs = ["wenex", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/wenex/__about__.py",
+]
+
+[tool.coverage.paths]
+wenex = ["src/wenex", "*/wenex/src/wenex"]
+tests = ["tests", "*/wenex/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]

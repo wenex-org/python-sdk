@@ -20,3 +20,7 @@ echo 'eval "$(pyenv init - bash)"' >> ~/.bashrc
 python -m venv .venv
 source .venv/bin/activate
 ```
+
+## License
+
+`wenex` is distributed under the terms of the [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html) license.
