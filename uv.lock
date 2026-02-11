@@ -187,6 +187,15 @@ wheels = [
 ]
 
 [[package]]
+name = "qs-codec"
+version = "1.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/cd/35/e7a1d3615c1a4af47afc0f41084895cdd01f0cc03f6ea1ff2791765fa8b9/qs_codec-1.4.0.tar.gz", hash = "sha256:be30ac28a28f51f8b8a3d0808e7f249ee26c65f19e30d82ae9ebcc8b4de5b938", size = 111935, upload-time = "2026-02-01T14:21:08.784Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d6/04/418528f5ada00c797750f7ac3e681fe4dcea1eb787f297ee2cebbb3c206f/qs_codec-1.4.0-py3-none-any.whl", hash = "sha256:f00cc43255a60627275fc0d715cbdd75cecd4ed0a662f2f602b7db10aa780ca5", size = 56370, upload-time = "2026-02-01T14:21:06.784Z" },
+]
+
+[[package]]
 name = "ruff"
 version = "0.15.0"
 source = { registry = "https://pypi.org/simple" }
@@ -239,6 +248,7 @@ name = "wenex"
 source = { editable = "." }
 dependencies = [
     { name = "httpx" },
+    { name = "qs-codec" },
 ]
 
 [package.dev-dependencies]
@@ -248,7 +258,10 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "httpx", specifier = ">=0.28.1" }]
+requires-dist = [
+    { name = "httpx", specifier = ">=0.28.1" },
+    { name = "qs-codec", specifier = ">=1.4.0" },
+]
 
 [package.metadata.requires-dev]
 dev = [
