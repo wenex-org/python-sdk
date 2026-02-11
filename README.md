@@ -12,6 +12,7 @@ Installation
 
 ```sh
 pip install -e "."
+pre-commit install
 ```
 
 ## License
