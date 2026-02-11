@@ -6,6 +6,14 @@ build-backend = "hatchling.build"
 installer = "uv"
 python = "3.12"
 
+[tool.hatch.envs.default.scripts]
+fmt = "ruff format src tests"
+lint = "ruff check src tests"
+check = [
+  "ruff check src tests",
+  "ruff format --check src tests"
+]
+
 [project]
 name = "wenex"
 dynamic = ["version"]
