@@ -1,0 +1,3 @@
+[submodule "src/wenex/common"]
+	path = src/wenex/common
+	url = ../python-sdk-common.git
