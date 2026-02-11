@@ -36,6 +36,7 @@ classifiers = [
 ]
 dependencies = [
     "httpx>=0.28.1",
+    "httpx-sse>=0.4.3",
     "qs-codec>=1.4.0",
 ]
 
