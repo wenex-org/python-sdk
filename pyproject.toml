@@ -34,7 +34,9 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: PyPy",
   "Operating System :: OS Independent",
 ]
-dependencies = []
+dependencies = [
+    "httpx>=0.28.1",
+]
 
 [project.urls]
 Documentation = "https://github.com/wenex-org/python-sdk#readme"
