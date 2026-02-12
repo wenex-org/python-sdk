@@ -1,7 +1,7 @@
 import os
 import pytest
 
-from wenex.common import COLLECTION, COLL
+from wenex.common.collection import COLLECTION, COLL
 
 
 def test_COLLECTION():
