@@ -37,6 +37,7 @@ classifiers = [
 ]
 dependencies = [
     "brotli>=1.2.0",
+    "bson>=0.5.10",
     "httpx>=0.28.1",
     "httpx-sse>=0.4.3",
     "pytest>=9.0.2",
