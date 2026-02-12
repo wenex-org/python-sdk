@@ -1,9 +1,13 @@
 {
   "cSpell.words": [
+    "APTS",
+    "asyncio",
     "httpx",
     "mypy",
     "pkgs",
     "pyenv",
+    "pytest",
+    "SMSS",
     "Vahid",
     "venv",
     "wenex"

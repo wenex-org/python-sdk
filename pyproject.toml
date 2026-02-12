@@ -7,6 +7,7 @@ installer = "uv"
 python = "3.12"
 
 [tool.hatch.envs.default.scripts]
+test = "pytest"
 fmt = "ruff format src tests"
 lint = "ruff check src tests"
 check = [
@@ -35,8 +36,11 @@ classifiers = [
   "Operating System :: OS Independent",
 ]
 dependencies = [
+    "brotli>=1.2.0",
     "httpx>=0.28.1",
     "httpx-sse>=0.4.3",
+    "pytest>=9.0.2",
+    "pytest-asyncio>=1.3.0",
     "qs-codec>=1.4.0",
 ]
 
