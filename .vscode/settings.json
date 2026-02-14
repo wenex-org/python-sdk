@@ -2,7 +2,10 @@
   "cSpell.words": [
     "APTS",
     "asyncio",
+    "croniter",
     "dotenv",
+    "emojize",
+    "emojized",
     "httpx",
     "mypy",
     "pkgs",
