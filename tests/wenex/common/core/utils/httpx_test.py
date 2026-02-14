@@ -7,20 +7,8 @@ def test_base64_url_encode():
 
 
 def test_get_params():
-  params = get_params()
+  params = get_params({}, False)
   assert params == {}
 
-  params = get_params({"brotli": 0})
-  assert params == {"q": "iwCAe30D"}
-
-  params = get_params({"brotli": True})
-  assert params == {"q": "iwCAe30D"}
-
-  params = get_params({"brotli": False})
-  assert params == {}
-
-  params = get_params({"brotli": {}})
-  assert params == {"q": "iwCAe30D"}
-
-  params = get_params({"brotli": {"quality": 8}})
+  params = get_params({}, True)
   assert params == {"q": "iwCAe30D"}
