@@ -2,6 +2,7 @@
   "cSpell.words": [
     "APTS",
     "asyncio",
+    "dotenv",
     "httpx",
     "mypy",
     "pkgs",
