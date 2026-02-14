@@ -53,8 +53,15 @@ Source = "https://github.com/wenex-org/python-sdk"
 [dependency-groups]
 dev = [
     "pre-commit>=4.5.1",
-    "ruff>=0.15.0",
+    "ruff>=0.15.1",
 ]
+
+[tool.ruff]
+line-length = 132
+indent-width = 2
+
+[tool.ruff.format]
+indent-style = "space"
 
 [tool.hatch.version]
 path = "src/wenex/__about__.py"
