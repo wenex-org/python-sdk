@@ -15,6 +15,7 @@
     "MELIPAYAMAK",
     "mypy",
     "NODEMAILER",
+    "Nominatim",
     "pkgs",
     "pyenv",
     "pytest",
