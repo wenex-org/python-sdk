@@ -19,6 +19,7 @@
     "pkgs",
     "pyenv",
     "pytest",
+    "SearcHit",
     "SMSS",
     "solana",
     "tonconnect",
