@@ -10,4 +10,4 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v4
-      - uses: hynek/build-and-publish-pypi@v1
+      - uses: hynek/build-and-inspect-python-package@v2
