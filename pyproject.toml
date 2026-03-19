@@ -14,6 +14,8 @@ check = [
   "ruff check src tests",
   "ruff format --check src tests"
 ]
+git = "bash scripts/git-submodule.sh"
+git-remote-add = "bash scripts/git-remote-add.sh"
 
 [project]
 name = "wenex"
