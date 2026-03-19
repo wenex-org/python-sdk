@@ -78,6 +78,9 @@ extra-dependencies = [
 [tool.hatch.envs.types.scripts]
 check = "mypy --install-types --non-interactive {args:src/wenex tests}"
 
+[tool.hatch.build]
+exclude = ["wenex/common/LICENSE"]
+
 [tool.coverage.run]
 source_pkgs = ["wenex", "tests"]
 branch = true
