@@ -19,8 +19,7 @@ pre-commit install
 
 ```sh
 pip install build twine
-uv build
-twine upload --repository testpypi dist/*
+uv build && uv publish
 ```
 
 ## License
