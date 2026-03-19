@@ -7,11 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.0.0] - 2025-01-01
+## [0.0.1] - 2025-01-01
 
 ### Added
 
 - initial release 🎉​🎊​.
 
 [unreleased]: https://github.com/wenex-org/platform-sdk/compare/0.0.1...HEAD
-[1.0.0]: https://github.com/wenex-org/platform-sdk/releases/tag/0.0.1
+[0.0.1]: https://github.com/wenex-org/platform-sdk/releases/tag/0.0.1
