@@ -19,6 +19,7 @@
     "Nominatim",
     "pkgs",
     "pyenv",
+    "pypa",
     "pypi",
     "pytest",
     "SearcHit",
