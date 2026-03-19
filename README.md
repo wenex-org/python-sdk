@@ -15,6 +15,14 @@ pip install -e "."
 pre-commit install
 ```
 
+## Build and Deploy
+
+```sh
+pip install build twine
+uv build
+twine upload --repository testpypi dist/*
+```
+
 ## License
 
 `wenex` is distributed under the terms of the [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html) license.
